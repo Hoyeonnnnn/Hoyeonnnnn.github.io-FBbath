@@ -1,0 +1,73 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .close-btn,
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .close-btn {
+    top: 10px;
+    right: 20px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .next-btn {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 1024px) {
+    .ImageCard img {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ImageCard img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ImageCard img {
+      width: 100%;
+    }
+  }

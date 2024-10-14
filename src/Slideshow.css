@@ -1,0 +1,44 @@
+.slideshow {
+    position: relative;
+    width: 500px;
+    height: 500px; /* 원하는 높이로 설정하세요 */
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover; /* 이미지 크기 조절 */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  @media (max-width : 1024px) {
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 500px; /* 원하는 높이로 설정하세요 */
+      overflow: hidden;
+    }
+    
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      object-fit: cover; /* 이미지 크기 조절 */
+    }
+    
+    .slide.active {
+      opacity: 1;
+    }
+  }
